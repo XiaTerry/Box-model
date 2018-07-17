@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局，左右固定中间自适应float</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #left{
+            width: 200px;
+            height: 400px;
+            background: #ff0036;
+            float: left;
+        }
+        #center{
+            height: 400px;
+            background: #00ff00;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        #right{
+            width: 200px;
+            height: 400px;
+            background: #0000ff;
+            float: right;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="center"></div>
+    </div>
+</body>
+</html>

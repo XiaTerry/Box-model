@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局，头尾固定中间自适应left和right等于0</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #top{
+            height: 30px;
+            background: #ff0036;
+            text-align: center;
+            color: #ffff;
+            line-height: 30px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+        #center{
+            background: #00ff00;
+            text-align: center;
+            color: #ff0036;
+            position: absolute;
+            top: 30px;
+            bottom: 30px;
+            right: 0;
+            left: 0;
+            overflow: scroll;
+        }
+        #bottom{
+            height: 30px;
+            background: #0000ff;
+            text-align: center;
+            color: #ffff;
+            line-height: 30px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="top">top顶部</div>
+        <div id="center">
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+            center中部<br>
+        </div>
+        <div id="bottom">bottom尾部</div>
+    </div>
+</body>
+</html>

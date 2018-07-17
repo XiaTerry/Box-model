@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局，头尾固定中间自适应flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html, body, #parent{
+            height: 100%;
+            width: 100%;
+        }
+        #parent{
+            display: flex;
+        }
+        #top{
+            height: 30px;
+            background: #ff0036;
+            text-align: center;
+            color: #ffff;
+            line-height: 30px;
+            width: 100%;
+            top: 0;
+            position: fixed;
+        }
+        #center{
+            background: #00ff00;
+            text-align: center;
+            color: #ff0036;
+            flex-grow: 1;
+            margin: 30px 0;
+            flex-direction: column;
+        }
+        #bottom{
+            height: 30px;
+            background: #0000ff;
+            text-align: center;
+            color: #ffff;
+            line-height: 30px;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="top">top顶部</div>
+        <div id="center">center中部</div>
+        <div id="bottom">bottom尾部</div>
+    </div>
+</body>
+</html>
